@@ -28,14 +28,14 @@ The raw dataset contained misaligned rows and inconsistent formatting.
 
 Using the Pandas library, I loaded the file with, ensured it is cleaned and then exported columns within the clean CSV suitable for SQL import. This ensured the dataset was consistent, structured, and ready for analysis.
 
-1. Imported pandas library and csv
-   `import` pandas library and `drive.mount` to mount the csv dataset from Google Drive.
-
-2. Check for duplicates
-   Duplicate rows were checked and confirmed to be zero.
-
-3. Loaded the dataset
+1. Imported Pandas and mounted Google 
+   Mounted Google Drive to access the dataset and loaded it into a Pandas DataFrame.
+   
+2. Loaded the dataset
    The raw CSV file was loaded using `latin1` encoding to avoid any decoding issues.
+   
+3. Check for duplicates
+   Duplicate rows were checked and confirmed to be zero.
 
 4. Convert date columns
    The `Order Date` and `Ship Date` columns were converted to datetime formats so that date-based analysis will work correctly.
