@@ -26,25 +26,19 @@ This dataset was chosen as I found it intriguing to investigate the major profit
 # Data Cleaning (Python/Pandas)
 The raw dataset contained misaligned rows and inconsistent formatting. 
 
-Using the Pandas library, I loaded the file with, ensured it is cleaned and then exported columns within the clean CSV suitable for SQL import. This ensured the dataset was consistent, structured, and ready for analysis.
+The following steps ensured the dataset was cleaned and prepared for the next stages of analysis:
 
-1. Imported Pandas and mounted Google 
-   Mounted Google Drive to access the dataset and loaded it into a Pandas DataFrame.
+1. Imported the Pandas library and mounted Google Drive to access the dataset before loading it into a Pandas DataFrame.
    
-2. Loaded the dataset
-   The raw CSV file was loaded using `latin1` encoding to avoid any decoding issues.
+2. The raw CSV file was loaded using `latin1` encoding to avoid any decoding issues.
    
-3. Check for duplicates
-   Duplicate rows were checked and confirmed to be zero.
+3. Duplicate rows were checked and confirmed to be zero.
 
-4. Convert date columns
-   The `Order Date` and `Ship Date` columns were converted to datetime formats so that date-based analysis will work correctly.
+4. The `Order Date` and `Ship Date` columns were converted to datetime formats so that date-based analysis will work correctly.
 
-5. Convert numeric columns
-   Columns such as `Sales`, `Quantity`, `Discount`, and `Profit` were converted to numeric types to ensure proper numeric values.
+6. Columns such as `Sales`, `Quantity`, `Discount`, and `Profit` were converted to numeric types to ensure proper numeric values.
 
-6. Export cleaned dataset
-   The cleaned data was saved into a new file under a new name.
+7. The cleaned data was saved into a new file under a new name.
 
 # SQL Analysis
   To prepare the dataset for analysis and visualisation, I followed a structured SQL workflow:
