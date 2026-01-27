@@ -9,18 +9,18 @@ This dataset was chosen as I found it intriguing to investigate the major profit
 
 # Project Structure
 ```md
-├── data/
-│   ├── superstore_raw.csv                 # Original dataset
-│   ├── superstore_cleaned.csv             # Cleaned via Pandas
-│   └── superstore_tableau_export.csv      # SQL-filtered data for Tableau
-├── notebook/
-│   └── data_cleaning.ipynb                # Pandas cleaning code
-├── sql/
-│   ├── create_table.sql                   # MySQL schema
-│   ├── load_data.sql                      # Data ingestion script
-│   └── select_for_tableau.sql             # SQL query for specific columns
-├── tableau/
-│   └── superstore_visualisations.twbx     # Packaged workbook (3 sheets + dashboard)
+├── Data/
+│   ├── Superstore_Raw.csv                 # Original dataset
+│   ├── Superstore_Cleaned.csv             # Cleaned via Pandas
+│   └── Superstore_Subset.csv              # SQL-filtered data for Tableau
+├── Notebook/
+│   └── Superstore_Data_Cleaning.ipynb     # Pandas cleaning code
+├── Sql/
+│   ├── Create_Table.sql                   # MySQL schema
+│   ├── Load_Data.sql                      # Data ingestion script
+│   └── Select_For_Tableau.sql             # SQL query for specific columns
+├── Tableau/
+│   └── Superstore_Visualisations.twbx     # Packaged workbook (3 sheets + dashboard)
 └── README.md                              # Project documentation
 ```
 # Data Cleaning (Python/Pandas)
